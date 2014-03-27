@@ -4,7 +4,6 @@ import requests
 import redis
 from bs4 import BeautifulSoup
 import sys
-import pickle
 
 from locales import locales
 

@@ -1,9 +1,7 @@
 import re
-import redis
-import pickle
 from subprocess import Popen
 
-from flask import render_template, abort, jsonify, Response
+from flask import render_template, abort, jsonify
 
 from app import app, redis, redis_key
 
