@@ -14,7 +14,7 @@ url = 'http://marketplaceedgeservice.windowsphone.com/v8/catalog/apps/{guid}?os=
 redis = redis.StrictRedis('127.0.0.1', '6379')
 redis_prefix = 'wpstore-checker'
 redis_key = lambda guid, key: '%s.%s.%s' % (redis_prefix, guid, key)
-redis_cache_time = 60 * 15
+redis_cache_time = 60 * 60
 
 queue = Queue.Queue()
 for locale in locales.iteritems():
