@@ -38,11 +38,12 @@ def check(guid):
     if status == 'error':
         return jsonify(status='error')
     elif status == 'processing':
-        return jsonify(status='processing')
+        percent = redis.get(redis_key('%s.%s' % (guid, 'percent')))
+        return jsonify(status='processing', percent=percent)
     elif status == 'done':
         results = {}
         for key in redis.keys('%s.*' % (redis_key(guid),)):
-            if key != '%s.status' % (redis_key(guid),):
+            if key not in ['%s.status' % (redis_key(guid),), '%s.percent' % (redis_key(guid),)]:
                 results[key] = redis.hgetall(key)
 
         return jsonify(status='done', results=render_template('table.html', results=results))

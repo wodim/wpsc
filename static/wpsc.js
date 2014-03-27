@@ -7,7 +7,7 @@ wpsc = {
     do_actual_check: function(guid) {
         $.getJSON("/check/" + guid, function(data) {
             if (data.status == 'processing') {
-                $('#results').html('Processing... hold on.');
+                $('#results').html('Processing... <strong>' + data.percent + '%</strong>');
             } else if (data.status == 'error') {
                 $('#results').html('There was an error retrieving information for this app. Please, contact the developer using the link below.');
                 window.clearInterval(wpsc.timer_handle);

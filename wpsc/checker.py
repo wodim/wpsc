@@ -22,8 +22,9 @@ for locale in locales.iteritems():
     queue.put(this_request)
 
 alive_threads = 0
+processed = 0
 def thread_worker(queue):
-    global alive_threads, guid
+    global alive_threads, guid, processed
     alive_threads += 1
     while True:
         try:
@@ -76,17 +77,25 @@ def thread_worker(queue):
             if not 'trial_available' in result:
                 result['trial_available'] = False
 
+            processed += 1
+
             key = redis_key(guid, locale[0])
             redis.hmset(key, result)
             print "saved inside %s" % (key,)
             key = redis_key(guid, 'status')
             redis.set(key, 'processing')
             redis.expire(key, redis_cache_time)
+            key = redis_key(guid, 'percent')
+            redis.set(key, processed * 100 / len(locales))
+            redis.expire(key, redis_cache_time)
         except Queue.Empty:
             alive_threads -= 1
             if not alive_threads:
                 key = redis_key(guid, 'status')
                 redis.set(key, 'done')
+                redis.expire(key, redis_cache_time)
+                key = redis_key(guid, 'percent')
+                redis.set(key, 100)
                 redis.expire(key, redis_cache_time)
                 print "results collected for %s, exiting" % (guid,)
             break
