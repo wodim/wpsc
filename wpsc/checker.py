@@ -15,6 +15,7 @@ url = 'http://marketplaceedgeservice.windowsphone.com/v8/catalog/apps/{guid}?os=
 redis = redis.StrictRedis('127.0.0.1', '6379')
 redis_prefix = 'wpstore-checker'
 redis_key = lambda guid, key: '%s.%s.%s' % (redis_prefix, guid, key)
+redis_cache_time = 60 * 15
 
 queue = Queue.Queue()
 for locale in locales.iteritems():
@@ -81,26 +82,26 @@ def thread_worker(queue):
             print "saved inside %s" % (key,)
             key = redis_key(guid, 'status')
             redis.set(key, 'processing')
-            redis.expire(key, 60 * 10)
+            redis.expire(key, redis_cache_time)
         except Queue.Empty:
             alive_threads -= 1
             if not alive_threads:
                 key = redis_key(guid, 'status')
                 redis.set(key, 'done')
-                redis.expire(key, 60 * 10)
+                redis.expire(key, redis_cache_time)
                 print "results collected for %s, exiting" % (guid,)
             break
         except: # any other thing.
             raise
             key = redis_key(guid, 'status')
             redis.set(key, 'error')
-            redis.expire(key, 60 * 10)
+            redis.expire(key, redis_cache_time)
             print "error for %s" % (guid,)
             sys.exit(1)
 
 key = redis_key(guid, 'status')
 redis.set(key, 'processing')
-redis.expire(key, 60 * 10)
+redis.expire(key, redis_cache_time)
 
 max_threads = 20
 for i in range(max_threads):

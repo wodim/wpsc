@@ -36,9 +36,11 @@ $(document).ready(function() {
             var c = table.config;
             return $.tablesorter.isDigit(s.replace(new RegExp(/\s.*$/g), ''), c);
         },
-        format: function (s){
+        format: function (s) {
             return $.tablesorter.formatFloat(s.replace(new RegExp(/\s.*$/g), ''));
         },
         type: "numeric",
     });
+
+    $("#email").html(atob("d29kaW1Adm9ydGlnYXVudC5uZXQ="));
 });

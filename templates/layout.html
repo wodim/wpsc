@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="Windows Phone Store Checker lets you compare the name, price
+            and availability of all apps in the Windows Phone Store among all countries.">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='wpsc.css') }}">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -22,3 +24,5 @@
         <div class="container">
             {% block content %}{% endblock %}
         </div><!-- /.container -->
+
+        <p class="contact">Results are cached for 15 minutes — Questions? <span id="email"></span></p>
