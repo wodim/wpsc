@@ -103,7 +103,7 @@ key = redis_key(guid, 'status')
 redis.set(key, 'processing')
 redis.expire(key, redis_cache_time)
 
-max_threads = 20
+max_threads = 5
 for i in range(max_threads):
     thread = threading.Thread(target=thread_worker, args=(queue,))
     thread.start()
