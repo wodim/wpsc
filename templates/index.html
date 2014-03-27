@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="container-index">
+        <p>
+            <strong>Windows Phone Store Checker</strong> lets you compare the name, price
+            and availability of all apps in the Windows Phone Store among all countries.
+        </p>
+        <form class="form-search" id="search">
+            <div class="input-group">
+                <input id="guid" type="text" class="form-control"
+                    placeholder="Paste an app GUID or the URL of an app in the Store...">
+                <span class="input-group-btn">
+                    <button id="submit" type="submit" class="btn btn-primary">Search</button>
+                </span>
+            </div>
+        </form>
+        <div id="warning">Sorry, that's neither a GUID nor an app link.</div>
+    </div>
+    <script>$("#search").bind("submit", function() { wpsc.launch($("#guid").val()); return false; });</script>
+{% endblock %}

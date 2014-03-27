@@ -1,0 +1,71 @@
+<table class="table tablesorter" id="sortable">
+    <thead>
+        <tr>
+            <th>
+                Locale
+            </th>
+            <th>
+                <span title="Apps can have different names depending on the locale.">
+                    Name
+                </span>
+            </th>
+            {#
+            <th>
+                Is it available?
+            </th>
+            #}
+            <th>
+                Live/Beta/Unpublished?
+            </th>
+            <th class="{sorter: 'aryan'}">
+                Price
+            </th>
+            <th>
+                Trial available?
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for locale in results.itervalues() %}
+            <tr>
+                <td>
+                    {{ locale.locale_longname }}
+                </td>
+                <td>
+                    {{ locale.name }}
+                </td>
+                {#
+                {% if locale.is_available %}
+                    <td class="green">
+                        Yes
+                    </td>
+                {% else %}
+                    <td class="red">
+                        No
+                {% endif %}
+                #}
+                <td>
+                    {{ locale.visibility_status }}
+                </td>
+                <td>
+                    {{ locale.price }} {{ locale.price_currency_code }}
+                </td>
+                {% if locale.trial_available == 'True' %}
+                    <td class="green">
+                        Yes
+                    </td>
+                {% else %}
+                    <td class="red">
+                        No
+                    </td>
+                {% endif %}
+                <td>
+                    <a href="https://www.windowsphone.com/{{ locale.locale_language }}/store/app/lalala/{{ locale.guid }}">Link to the Store</a>
+                </td>
+            <tr>
+        {% endfor %}
+    </tbody>
+</table>

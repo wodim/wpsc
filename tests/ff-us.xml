@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<a:feed xmlns:a="http://www.w3.org/2005/Atom" xmlns:os="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://schemas.zune.net/catalog/apps/2008/02"><a:link rel="self" type="application/atom+xml" href="/v8/catalog/apps/14ee2c62-1f7d-4e57-8380-5433d4df54b2?os=8.0.10521.0&amp;cc=US&amp;lang=en-us&amp;moId=" />
+    <a:updated>2014-03-23T13:22:53.374636Z</a:updated>
+    <a:title type="text">Final Fantasy III</a:title>
+    <a:id>urn:uuid:14ee2c62-1f7d-4e57-8380-5433d4df54b2</a:id>
+    <a:content type="html">"Final Fantasy III -- now on Windows Phone! First released in 1990, Final Fantasy III was the first title in the Final Fantasy series to become a million-seller, establishing once and for all that Square Enix's classic RPG saga was here to stay. The
+        full 3D remake released in 2006 duplicated the original's success, selling over a million copies worldwide. Final Fantasy III was a hallmark of innovation for the entire series, from the job system that lets characters change classes at any time
+        to the ability to summon powerful creatures such as Shiva and Bahamut. When darkness falls and the land is robbed of light, four youths are chosen by the crystals to set forth on a journey to save the world."</a:content>
+    <iapCount>-1</iapCount>
+    <sortTitle>Final Fantasy III</sortTitle>
+    <releaseDate>2013-12-26T17:15:50.930000Z</releaseDate>
+    <visibilityStatus>Live</visibilityStatus>
+    <publisher>SQUARE ENIX Co LTD</publisher>
+    <averageUserRating>8.918033</averageUserRating>
+    <userRatingCount>244</userRatingCount>
+    <image>
+        <id>urn:uuid:40e63e40-2060-41e4-91c3-e33a59edc923</id>
+    </image>
+    <screenshots>
+        <screenshot>
+            <id>urn:uuid:46f047d0-aacb-4087-b31b-242933d62f89</id>
+            <orientation>90</orientation>
+        </screenshot>
+        <screenshot>
+            <id>urn:uuid:bffcf264-2d7b-4db4-841a-dd1c60b7be99</id>
+            <orientation>90</orientation>
+        </screenshot>
+        <screenshot>
+            <id>urn:uuid:377e0704-0165-495d-a195-dcbe88753c58</id>
+            <orientation>90</orientation>
+        </screenshot>
+        <screenshot>
+            <id>urn:uuid:44fc9ec2-c3f0-41b7-81a4-85671e715331</id>
+            <orientation>90</orientation>
+        </screenshot>
+        <screenshot>
+            <id>urn:uuid:00df7ae9-cfa9-440d-816c-1c7382bd5ee3</id>
+            <orientation>90</orientation>
+        </screenshot>
+        <screenshot>
+            <id>urn:uuid:b8d1b032-bbc6-4bd8-b9b6-d1cb41090d5e</id>
+            <orientation>90</orientation>
+        </screenshot>
+        <screenshot>
+            <id>urn:uuid:395417f5-83c2-4f48-9af4-4f9cf7d5a0cc</id>
+            <orientation>90</orientation>
+        </screenshot>
+        <screenshot>
+            <id>urn:uuid:0b8d0dec-6c45-4ca2-a4d0-d9dea8ef4e5e</id>
+            <orientation>90</orientation>
+        </screenshot>
+    </screenshots>
+    <categories>
+        <category>
+            <id>windowsphone.Games</id>
+            <title>games</title>
+            <isRoot>True</isRoot>
+        </category>
+        <category>
+            <id>windowsphone.RolePlaying</id>
+            <title>role playing</title>
+            <isRoot>False</isRoot>
+            <parentId>windowsphone.Games</parentId>
+        </category>
+    </categories>
+    <tags>
+        <tag>Premium</tag>
+    </tags>
+    <offers>
+        <offer>
+            <offerId>urn:uuid:be4d29f1-d67b-4be4-945e-72c486ef7d52</offerId>
+            <mediaInstanceId>urn:uuid:e00aff2d-cbee-4ade-8565-3e5fbf8522e6</mediaInstanceId>
+            <clientTypes>
+                <clientType>WindowsPhone71</clientType>
+                <clientType>WindowsPhone80</clientType>
+                <clientType>WindowsPhone81</clientType>
+            </clientTypes>
+            <paymentTypes>
+                <paymentType>Credit Card</paymentType>
+                <paymentType>Mobile Operator</paymentType>
+            </paymentTypes>
+            <store>ZEST</store>
+            <price>15.99</price>
+            <displayPrice>$15.99</displayPrice>
+            <priceCurrencyCode>USD</priceCurrencyCode>
+            <licenseRight>Purchase</licenseRight>
+            <expiration>2100-01-01T00:00:00Z</expiration>
+        </offer>
+        <offer>
+            <offerId>urn:uuid:e7995633-3a0c-4c65-972a-c743ea671039</offerId>
+            <mediaInstanceId>urn:uuid:e00aff2d-cbee-4ade-8565-3e5fbf8522e6</mediaInstanceId>
+            <clientTypes>
+                <clientType>WindowsPhone71</clientType>
+                <clientType>WindowsPhone80</clientType>
+                <clientType>WindowsPhone81</clientType>
+            </clientTypes>
+            <paymentTypes>
+                <paymentType>Credit Card</paymentType>
+                <paymentType>Mobile Operator</paymentType>
+            </paymentTypes>
+            <store>ZEST</store>
+            <price>0</price>
+            <displayPrice>$0.00</displayPrice>
+            <priceCurrencyCode>USD</priceCurrencyCode>
+            <licenseRight>Trial</licenseRight>
+            <expiration>2100-01-01T00:00:00Z</expiration>
+        </offer>
+    </offers>
+    <taxString>plus applicable taxes</taxString>
+    <backgroundImage>
+        <id>urn:uuid:1a08dc44-52e1-48ac-b04e-938fe65c52c7</id>
+    </backgroundImage>
+    <publisherId>SQUARE ENIX Co LTD</publisherId>
+    <publisherGuid>urn:uuid:89c90a33-43b9-4f92-989d-6206e428c3c4</publisherGuid>
+    <a:entry>
+        <a:updated>2014-03-23T13:22:53.374636Z</a:updated>
+        <a:title type="text">Final Fantasy III 1.0.0.0</a:title>
+        <a:id>urn:uuid:e00aff2d-cbee-4ade-8565-3e5fbf8522e6</a:id>
+        <version>1.0.0.0</version>
+        <payloadId>urn:uuid:e0cb53b0-1dcb-4f92-aa77-fcba22b5faf5</payloadId>
+        <skuId>urn:uuid:e00aff2d-cbee-4ade-8565-3e5fbf8522e6</skuId>
+        <skuLastUpdated>2013-12-26T17:15:50.930000Z</skuLastUpdated>
+        <isAvailableInCountry>true</isAvailableInCountry>
+        <isAvailableInStore>true</isAvailableInStore>
+        <isClientTypeCompatible>true</isClientTypeCompatible>
+        <isHardwareCompatible>true</isHardwareCompatible>
+        <isBlacklisted>false</isBlacklisted>
+        <url>http://cdn.marketplacecontent.windowsphone.com/public/38bd2c23-efb2-4175-ac04-1554bf534f7e</url>
+        <packageSize>473411498</packageSize>
+        <installSize>562459648</installSize>
+        <clientTypes>
+            <clientType>WindowsPhone71</clientType>
+            <clientType>WindowsPhone80</clientType>
+            <clientType>WindowsPhone81</clientType>
+        </clientTypes>
+        <supportedLanguages>
+            <supportedLanguage>Deutsch</supportedLanguage>
+            <supportedLanguage>English (United States)</supportedLanguage>
+            <supportedLanguage>Español (España, alfabetización internacional)</supportedLanguage>
+            <supportedLanguage>français</supportedLanguage>
+            <supportedLanguage>italiano</supportedLanguage>
+            <supportedLanguage>日本語</supportedLanguage>
+            <supportedLanguage>한국어</supportedLanguage>
+            <supportedLanguage>中文(简体)</supportedLanguage>
+            <supportedLanguage>中文(繁體)</supportedLanguage>
+        </supportedLanguages>
+        <deviceCapabilities>&lt;capability&gt;&lt;id&gt;ID_CAP_GAMERSERVICES&lt;/id&gt;&lt;string&gt;Xbox&lt;/string&gt;&lt;disclosure&gt;Disclose&lt;/disclosure&gt;&lt;/capability&gt;&lt;capability&gt;&lt;id&gt;ID_CAP_MEDIALIB&lt;/id&gt;&lt;string&gt;photo, music, and video
+            libraries&lt;/string&gt;&lt;disclosure&gt;Disclose&lt;/disclosure&gt;&lt;/capability&gt;&lt;hwCapability&gt;&lt;requirementType&gt;Memory&lt;/requirementType&gt;&lt;minMemory&gt;90&lt;/minMemory&gt;&lt;id&gt;ID_REQ_MEMORY_90&lt;/id&gt;&lt;string&gt;512
+            MB RAM or more&lt;/string&gt;&lt;required&gt;true&lt;/required&gt;&lt;/hwCapability&gt;&lt;hwCapability&gt;&lt;requirementType&gt;Resolution&lt;/requirementType&gt;&lt;id&gt;ID_RESOLUTION_HD720P&lt;/id&gt;&lt;string&gt;HD720P (720x1280)&lt;/string&gt;&lt;required&gt;true&lt;/required&gt;&lt;/hwCapability&gt;&lt;hwCapability&gt;&lt;requirementType&gt;Resolution&lt;/requirementType&gt;&lt;id&gt;ID_RESOLUTION_WVGA&lt;/id&gt;&lt;string&gt;WVGA
+            (480x800)&lt;/string&gt;&lt;required&gt;true&lt;/required&gt;&lt;/hwCapability&gt;&lt;hwCapability&gt;&lt;requirementType&gt;Resolution&lt;/requirementType&gt;&lt;id&gt;ID_RESOLUTION_WXGA&lt;/id&gt;&lt;string&gt;WXGA (768x1280)&lt;/string&gt;&lt;required&gt;true&lt;/required&gt;&lt;/hwCapability&gt;</deviceCapabilities>
+    </a:entry>
+    <a:author>
+        <a:name>Microsoft Corporation</a:name>
+    </a:author>
+</a:feed>

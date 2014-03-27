@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='wpsc.css') }}">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='jquery.tablesorter.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='wpsc.js') }}"></script>
+        <title>
+            Windows Phone Store Checker
+        </title>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Windows Phone Store Checker</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div><!-- /.container -->

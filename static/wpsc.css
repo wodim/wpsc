@@ -1,0 +1,37 @@
+body {
+  padding-top: 80px;
+}
+.container-index {
+    width: 500px;
+    margin: 0 auto;
+}
+td.green {
+    background: #efe;
+}
+td.red {
+    background: #fee;
+}
+#warning {
+    margin-top: 8px;
+    color: #c7254e;
+    display: none;
+}
+
+/* ts */
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    font-size: 8pt;
+}
+table.tablesorter thead tr .header {
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+    background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+    background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+}

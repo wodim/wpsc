@@ -1,0 +1,6 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <p id="wait">Wait while the results are retrieved.</p>
+    <div id="results"></div>
+    <script>$(document).ready(function() { wpsc.check('{{ guid }}'); });</script>
+{% endblock %}
